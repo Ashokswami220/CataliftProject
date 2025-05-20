@@ -63,7 +63,7 @@ const val colorUi = 0xFF0D47A1
 
 @Preview(showSystemUi = true, showBackground = true)
 @Composable
-fun MainScreen() {
+fun MainScreen(paddingValues: PaddingValues) {
 
 
     val context = LocalContext.current
@@ -85,7 +85,8 @@ fun MainScreen() {
     LazyColumn (
         modifier = Modifier
             .fillMaxSize()
-            .background(Color.White),
+            .background(Color.White)
+            .padding(paddingValues),
         contentPadding = PaddingValues(bottom = 32.dp)
     ) {
         item {
