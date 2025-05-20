@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
         setContent {
             CataliftTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
-                    MainScreen()
+                    MainScreen(paddingValues = innerPadding)
                 }
             }
         }
